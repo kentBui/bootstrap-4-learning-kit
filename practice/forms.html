@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="KentBui" />
+    <meta name="keyword" content="bootstrap" />
+    <meta name="description" content="bootstrap learning kit" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a href="../index.html" class="navbar-brand">
+            Bootstrap 4 learning kit
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbar-menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="nav-dropdown-menu-1"
+                  data-toggle="dropdown"
+                >
+                  Layout
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="nav-dropdown-menu-1"
+                >
+                  <a href="./containers.html" class="dropdown-item">
+                    Containers
+                  </a>
+                  <a href="./gridSystem.html" class="dropdown-item">
+                    Grid system
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="nav-dropdown-menu-2"
+                  data-toggle="dropdown"
+                >
+                  Content
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="nav-dropdown-menu-2"
+                >
+                  <a href="./typography.html" class="dropdown-item"
+                    >Typography</a
+                  >
+                  <a href="./images.html" class="dropdown-item">Images</a>
+                  <a href="./figtures.html" class="dropdown-item">Figtures</a>
+                  <a href="./tables.html" class="dropdown-item">Tables</a>
+                  <a href="./code.html" class="dropdown-item">Code</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="nav-dropdown-menu-3"
+                  data-toggle="dropdown"
+                >
+                  Components
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="nav-dropdown-menu-3"
+                >
+                  <a href="./alert.html" class="dropdown-item">Alerts</a>
+                  <a href="./badge.html" class="dropdown-item">Badges</a>
+                  <a href="./breadcrumb.html" class="dropdown-item"
+                    >Breadcrumbs</a
+                  >
+                  <a href="./buttons.html" class="dropdown-item">Buttons</a>
+                  <a href="./buttongroup.html" class="dropdown-item"
+                    >Button groups</a
+                  >
+                  <a href="./card.html" class="dropdown-item">Card</a>
+                  <a href="./carousel.html" class="dropdown-item">Carrousel</a>
+                  <a href="./collapse.html" class="dropdown-item">Collapse</a>
+                  <a href="./dropdown.html" class="dropdown-item">Dropdowns</a>
+                  <a href="./forms.html" class="dropdown-item">Form-controls</a>
+                  <a href="./forms.html" class="dropdown-item">Form-layout</a>
+                  <a href="./forms.html" class="dropdown-item"
+                    >Form-validation</a
+                  >
+                  <a href="./inputgroup.html" class="dropdown-item"
+                    >Input group</a
+                  >
+                  <a href="./jumbotron.html" class="dropdown-item">Jumbotron</a>
+                  <a href="./listgroup.html" class="dropdown-item"
+                    >List group</a
+                  >
+                  <a href="./mediaobject.html" class="dropdown-item"
+                    >Media objeect</a
+                  >
+                  <a href="./modal.html" class="dropdown-item">Modal</a>
+                  <a href="./navs.html" class="dropdown-item">Navs</a>
+                  <a href="./navbar.html" class="dropdown-item">Navbar</a>
+                  <a href="./pagination.html" class="dropdown-item"
+                    >Pagination</a
+                  >
+                  <a href="./popover.html" class="dropdown-item">Popovers</a>
+                  <a href="./progress.html" class="dropdown-item">Progress</a>
+                  <a href="./scrollspy.html" class="dropdown-item">Scrollspy</a>
+                  <a href="./spinners.html" class="dropdown-item">Spinners</a>
+                  <a href="./toasts.html" class="dropdown-item">Toast</a>
+                  <a href="./tooltips.html" class="dropdown-item">Tooltips</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="nav-dropdown-menu-4"
+                  data-toggle="dropdown"
+                >
+                  Utilities
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="nav-dropdown-menu-4"
+                >
+                  <a href="./border.html" class="dropdown-item">Borders</a>
+                  <a href="./clearfix.html" class="dropdown-item">Clearfix</a>
+                  <a href="./closeicon.html" class="dropdown-item"
+                    >Close icon</a
+                  >
+                  <a href="./colors.html" class="dropdown-item">Colors</a>
+                  <a href="./display.html" class="dropdown-item">Display</a>
+                  <a href="./embed.html" class="dropdown-item">Embed</a>
+                  <a href="./flex.html" class="dropdown-item">Flex</a>
+                  <a href="./float.html" class="dropdown-item">Float</a>
+                  <a href="./imagereplacement.html" class="dropdown-item"
+                    >Image Replacement</a
+                  >
+                  <a href="./overflow.html" class="dropdown-item">Overflow</a>
+                  <a href="./position.html" class="dropdown-item">Position</a>
+                  <a href="./screenreader.html" class="dropdown-item"
+                    >Screen readers</a
+                  >
+                  <a href="./shadows.html" class="dropdown-item">Shadows</a>
+                  <a href="./spacing.html" class="dropdown-item">Spacing</a>
+                  <a href="./text.html" class="dropdown-item">Text</a>
+                  <a href="./verticalalign.html" class="dropdown-item"
+                    >Vertical align</a
+                  >
+                  <a href="./visibility.html" class="dropdown-item"
+                    >Visibility</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="nav-dropdown-menu-5"
+                  data-toggle="dropdown"
+                >
+                  Templates
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="nav-dropdown-menu-5"
+                >
+                  <a href="#" class="dropdown-item">Photo gallery</a>
+                  <a href="#" class="dropdown-item">Video gallery</a>
+                  <a href="#" class="dropdown-item">Mixed gallery</a>
+                  <a href="#" class="dropdown-item">Audio gallery</a>
+                  <a href="#" class="dropdown-item">Login</a>
+                  <a href="#" class="dropdown-item">Contact</a>
+                  <a href="#" class="dropdown-item">Footer</a>
+                  <a href="#" class="dropdown-item">Sitemap</a>
+                  <a href="#" class="dropdown-item">Shortcuts</a>
+                  <a href="#" class="dropdown-item">FAQ</a>
+                  <a href="#" class="dropdown-item">Thank you</a>
+                  <a href="#" class="dropdown-item">Employees</a>
+                  <a href="#" class="dropdown-item">Pricing table</a>
+                  <a href="#" class="dropdown-item">Create account</a>
+                </div>
+              </li>
+            </ul>
+            <div class="btn-group btn-group-sm">
+              <a href="#" class="btn btn-info">Reference</a>
+              <a href="#" class="btn btn-info">Practice</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container pb-5">
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb bg-white">
+            <li class="breadcrumb-item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+              Form
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <h2>example 1</h2>
+        <div class="row">
+          <div class="col-10 offset-1">
+            <div class="card">
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" />
+                    <span class="text-muted form-text"
+                      >We'll never share your email with anyone else</span
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Enter your password</label>
+                    <input type="password" class="form-control" id="password" />
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" name="check" id="check" />
+                    <label for="check">Check me out</label>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-primary" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <h2>example 2</h2>
+        <div class="row">
+          <div class="col-8 offset-2">
+            <div class="card">
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="email1">
+                      Email address
+                    </label>
+                    <input
+                      type="mail"
+                      id="email-1"
+                      name="email"
+                      placeholder="name@example.com"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="select-1">Example select</label>
+                    <select class="form-control" name="number" id="select-1">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="select-2">multiple select</label>
+                    <select
+                      class="form-control"
+                      name="number"
+                      id="select-1"
+                      multiple
+                    >
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="text-1">Example textarea</label>
+                    <textarea
+                      class="form-control"
+                      name="textarea"
+                      id="text-1"
+                      rows="5"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="file-1">Example file input</label>
+                    <input
+                      type="file"
+                      name="file"
+                      id="file-1"
+                      class="form-control-file"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="range">Example range input</label>
+                    <input
+                      class="form-control-range"
+                      type="range"
+                      name="range"
+                      id="range"
+                      min="0"
+                      max="100"
+                      value="10"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>form inline</h2>
+        <div class="row">
+          <form class="form-inline">
+            <div class="form-group mr-3">
+              <label for="email" class="sr-only">email</label>
+              <input
+                type="email"
+                class="form-control-plaintext"
+                readonly
+                value="email@gmail.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password" class="sr-only">password</label>
+              <input type="password" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <hr />
+        <h2>form check</h2>
+        <form action="">
+          <!-- class="form-inline" -->
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="gender"
+              id="male"
+            />
+            <label class="form-check-label" for="male">Male</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="gender"
+              id="female"
+            />
+            <label class="form-check-label" for="female">Female</label>
+          </div>
+        </form>
+        <h2>Form group</h2>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="">jajfjaj</label>
+              <input type="email" name="" class="form-control" id="" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="">jajfjaj</label>
+              <input type="email" name="" class="form-control" id="" />
+            </div>
+          </div>
+        </div>
+        <h2>example 3</h2>
+        <p>create a form</p>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input
+                type="address"
+                name="address"
+                id="address"
+                class="form-control"
+                placeholder="1234"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label for="address2">Address 2</label>
+              <input
+                type="address2"
+                name="address2"
+                id="address2"
+                class="form-control"
+                placeholder="1234"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" class="form-control" name="city" id="city" />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="state">Satte</label>
+              <select name="state" id="state" class="form-control">
+                <option value="0">Choose ...</option>
+                <option value="1">...</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" name="zip" id="zip" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                name="check"
+                id="check"
+                type="checkbox"
+              />
+              <label for="check" class="form-check-label">Check me out</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary mt-3" type="submit">Submit</button>
+          </div>
+        </div>
+        <form action="">
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label"
+              >Email</label
+            >
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" />
+            </div>
+          </div>
+        </form>
+        <hr />
+        <h2>auto - sizing</h2>
+        <form action="">
+          <div class="form-row align-items-center">
+            <div class="col-auto">
+              <label for="name" class="sr-only">name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                readonly
+                value="Jane"
+              />
+            </div>
+            <div class="col-auto">
+              <label for="username" class="sr-only">username</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="username"
+                  id="username"
+                  placeholder="username"
+                />
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="check"
+                  id="check"
+                  checked
+                />
+                <label for="check" class="form-check-label">Remember me</label>
+              </div>
+            </div>
+          </div>
+        </form>
+        <hr />
+        <form>
+          <div class="form-row align-items-center">
+            <div class="col-auto my-1">
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect"
+                >Preference</label
+              >
+              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-auto my-1">
+              <div class="custom-control custom-checkbox mr-sm-2">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="customControlAutosizing"
+                />
+                <label
+                  class="custom-control-label"
+                  for="customControlAutosizing"
+                  >Remember my preference</label
+                >
+              </div>
+            </div>
+            <div class="col-auto my-1">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

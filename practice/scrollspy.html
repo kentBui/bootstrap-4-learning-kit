@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="KentBui" />
+    <meta name="keyword" content="bootstrap" />
+    <meta name="description" content="bootstrap learning kit" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <title>Scrollspy</title>
+    <style>
+      .scrollspy {
+        position: relative;
+        height: 200px;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a href="../index.html" class="navbar-brand">
+            Bootstrap 4 learning kit
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbar-menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="nav-dropdown-menu-1"
+                  data-toggle="dropdown"
+                >
+                  Layout
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="nav-dropdown-menu-1"
+                >
+                  <a href="./containers.html" class="dropdown-item">
+                    Containers
+                  </a>
+                  <a href="./gridSystem.html" class="dropdown-item">
+                    Grid system
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="nav-dropdown-menu-2"
+                  data-toggle="dropdown"
+                >
+                  Content
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="nav-dropdown-menu-2"
+                >
+                  <a href="./typography.html" class="dropdown-item"
+                    >Typography</a
+                  >
+                  <a href="./images.html" class="dropdown-item">Images</a>
+                  <a href="./figtures.html" class="dropdown-item">Figtures</a>
+                  <a href="./tables.html" class="dropdown-item">Tables</a>
+                  <a href="./code.html" class="dropdown-item">Code</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="nav-dropdown-menu-3"
+                  data-toggle="dropdown"
+                >
+                  Components
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="nav-dropdown-menu-3"
+                >
+                  <a href="./alert.html" class="dropdown-item">Alerts</a>
+                  <a href="./badge.html" class="dropdown-item">Badges</a>
+                  <a href="./breadcrumb.html" class="dropdown-item"
+                    >Breadcrumbs</a
+                  >
+                  <a href="./buttons.html" class="dropdown-item">Buttons</a>
+                  <a href="./buttongroup.html" class="dropdown-item"
+                    >Button groups</a
+                  >
+                  <a href="./card.html" class="dropdown-item">Card</a>
+                  <a href="./carousel.html" class="dropdown-item">Carrousel</a>
+                  <a href="./collapse.html" class="dropdown-item">Collapse</a>
+                  <a href="./dropdown.html" class="dropdown-item">Dropdowns</a>
+                  <a href="./forms.html" class="dropdown-item">Form-controls</a>
+                  <a href="./forms.html" class="dropdown-item">Form-layout</a>
+                  <a href="./forms.html" class="dropdown-item"
+                    >Form-validation</a
+                  >
+                  <a href="./inputgroup.html" class="dropdown-item"
+                    >Input group</a
+                  >
+                  <a href="./jumbotron.html" class="dropdown-item">Jumbotron</a>
+                  <a href="./listgroup.html" class="dropdown-item"
+                    >List group</a
+                  >
+                  <a href="./mediaobject.html" class="dropdown-item"
+                    >Media objeect</a
+                  >
+                  <a href="./modal.html" class="dropdown-item">Modal</a>
+                  <a href="./navs.html" class="dropdown-item">Navs</a>
+                  <a href="./navbar.html" class="dropdown-item">Navbar</a>
+                  <a href="./pagination.html" class="dropdown-item"
+                    >Pagination</a
+                  >
+                  <a href="./popover.html" class="dropdown-item">Popovers</a>
+                  <a href="./progress.html" class="dropdown-item">Progress</a>
+                  <a href="./scrollspy.html" class="dropdown-item">Scrollspy</a>
+                  <a href="./spinners.html" class="dropdown-item">Spinners</a>
+                  <a href="./toasts.html" class="dropdown-item">Toast</a>
+                  <a href="./tooltips.html" class="dropdown-item">Tooltips</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="nav-dropdown-menu-4"
+                  data-toggle="dropdown"
+                >
+                  Utilities
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="nav-dropdown-menu-4"
+                >
+                  <a href="./border.html" class="dropdown-item">Borders</a>
+                  <a href="./clearfix.html" class="dropdown-item">Clearfix</a>
+                  <a href="./closeicon.html" class="dropdown-item"
+                    >Close icon</a
+                  >
+                  <a href="./colors.html" class="dropdown-item">Colors</a>
+                  <a href="./display.html" class="dropdown-item">Display</a>
+                  <a href="./embed.html" class="dropdown-item">Embed</a>
+                  <a href="./flex.html" class="dropdown-item">Flex</a>
+                  <a href="./float.html" class="dropdown-item">Float</a>
+                  <a href="./imagereplacement.html" class="dropdown-item"
+                    >Image Replacement</a
+                  >
+                  <a href="./overflow.html" class="dropdown-item">Overflow</a>
+                  <a href="./position.html" class="dropdown-item">Position</a>
+                  <a href="./screenreader.html" class="dropdown-item"
+                    >Screen readers</a
+                  >
+                  <a href="./shadows.html" class="dropdown-item">Shadows</a>
+                  <a href="./spacing.html" class="dropdown-item">Spacing</a>
+                  <a href="./text.html" class="dropdown-item">Text</a>
+                  <a href="./verticalalign.html" class="dropdown-item"
+                    >Vertical align</a
+                  >
+                  <a href="./visibility.html" class="dropdown-item"
+                    >Visibility</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="nav-dropdown-menu-5"
+                  data-toggle="dropdown"
+                >
+                  Templates
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="nav-dropdown-menu-5"
+                >
+                  <a href="#" class="dropdown-item">Photo gallery</a>
+                  <a href="#" class="dropdown-item">Video gallery</a>
+                  <a href="#" class="dropdown-item">Mixed gallery</a>
+                  <a href="#" class="dropdown-item">Audio gallery</a>
+                  <a href="#" class="dropdown-item">Login</a>
+                  <a href="#" class="dropdown-item">Contact</a>
+                  <a href="#" class="dropdown-item">Footer</a>
+                  <a href="#" class="dropdown-item">Sitemap</a>
+                  <a href="#" class="dropdown-item">Shortcuts</a>
+                  <a href="#" class="dropdown-item">FAQ</a>
+                  <a href="#" class="dropdown-item">Thank you</a>
+                  <a href="#" class="dropdown-item">Employees</a>
+                  <a href="#" class="dropdown-item">Pricing table</a>
+                  <a href="#" class="dropdown-item">Create account</a>
+                </div>
+              </li>
+            </ul>
+            <div class="btn-group btn-group-sm">
+              <a href="#" class="btn btn-info">Reference</a>
+              <a href="#" class="btn btn-info">Practice</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container pb-5">
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb bg-white">
+            <li class="breadcrumb-item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+              scrollspy
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <nav class="navbar navbar-light bg-light" id="exam1">
+          <a href="#" class="navbar-brand">logo</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="#sec1" class="nav-link active">Sec1</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sec2" class="nav-link">Sec2</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sec3" class="nav-link">Sec3</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="sec4"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                id="dropdown-1"
+              >
+                sec 4
+              </a>
+              <div class="dropdown-menu">
+                <a href="#sec-41" class="dropdown-item">sec 41</a>
+                <a href="#sec-42" class="dropdown-item">sec 42</a>
+                <a href="#sec-43" class="dropdown-item">sec 43</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="scrollspy"
+          data-spy="scroll"
+          data-target="#exam1"
+          data-offset="0"
+        >
+          <h4 id="sec1">@sec 1</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+            quisquam eos fugit, maiores saepe qui aspernatur soluta assumenda
+            nihil repellendus!
+          </p>
+          <h4 id="sec2">@sec 2</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+            quisquam eos fugit, maiores saepe qui aspernatur soluta assumenda
+            nihil repellendus!
+          </p>
+          <h4 id="sec3">@sec 3</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+            quisquam eos fugit, maiores saepe qui aspernatur soluta assumenda
+            nihil repellendus!
+          </p>
+          <h4 id="sec4">@sec 4</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+            quisquam eos fugit, maiores saepe qui aspernatur soluta assumenda
+            nihil repellendus!
+          </p>
+          <h4 id="sec-41">@sec 41</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+            quisquam eos fugit, maiores saepe qui aspernatur soluta assumenda
+            nihil repellendus!
+          </p>
+          <h4 id="sec-42">@sec 42</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+            quisquam eos fugit, maiores saepe qui aspernatur soluta assumenda
+            nihil repellendus!
+          </p>
+          <h4 id="sec-43">@sec 43</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+            quisquam eos fugit, maiores saepe qui aspernatur soluta assumenda
+            nihil repellendus!
+          </p>
+        </div>
+        <hr />
+        <h2>exam 2</h2>
+        <div class="row">
+          <div class="col-4">
+            <nav class="navbar navbar-light bg-light flex-column">
+              <a href="#" class="navbar-brand">Logo</a>
+              <nav class="nav nav-pills flex-column" id="exam2">
+                <a href="#item1" class="nav-link">item1</a>
+                <nav class="nav nav-pills flex-column ml-3 py-1">
+                  <a href="#item11" class="nav-link">item11</a>
+                  <a href="#item12" class="nav-link">item12</a>
+                </nav>
+                <a href="#item2" class="nav-link">item2</a>
+                <nav class="nav nav-pills flex-column ml-3 py-1">
+                  <a href="#item21" class="nav-link">item21</a>
+                  <a href="#item22" class="nav-link">item22</a>
+                </nav>
+                <a href="#item3" class="nav-link">item3</a>
+                <nav class="nav nav-pills flex-column ml-3 py-1">
+                  <a href="#item31" class="nav-link">item31</a>
+                  <a href="#item32" class="nav-link">item32</a>
+                </nav>
+              </nav>
+            </nav>
+          </div>
+          <div class="col-8">
+            <div
+              class="scrollspy"
+              data-spy="scroll"
+              data-target="#exam2"
+              data-offset="0"
+            >
+              <h4 id="item1">title</h4>
+              <h5 id="item11">title</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Excepturi nemo quis unde earum, iusto atque sunt nisi, voluptate
+                minus molestias sequi ducimus explicabo reprehenderit
+                consequatur amet placeat expedita. Cupiditate, vel?
+              </p>
+              <h5 id="item12">title</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Excepturi nemo quis unde earum, iusto atque sunt nisi, voluptate
+                minus molestias sequi ducimus explicabo reprehenderit
+                consequatur amet placeat expedita. Cupiditate, vel?
+              </p>
+
+              <h4 id="item2">title</h4>
+              <h5 id="item21">title</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Excepturi nemo quis unde earum, iusto atque sunt nisi, voluptate
+                minus molestias sequi ducimus explicabo reprehenderit
+                consequatur amet placeat expedita. Cupiditate, vel?
+              </p>
+              <h5 id="item22">title</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Excepturi nemo quis unde earum, iusto atque sunt nisi, voluptate
+                minus molestias sequi ducimus explicabo reprehenderit
+                consequatur amet placeat expedita. Cupiditate, vel?
+              </p>
+              <h4 id="item3">title</h4>
+              <h5 id="item31">title</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Excepturi nemo quis unde earum, iusto atque sunt nisi, voluptate
+                minus molestias sequi ducimus explicabo reprehenderit
+                consequatur amet placeat expedita. Cupiditate, vel?
+              </p>
+              <h5 id="item32">title</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Excepturi nemo quis unde earum, iusto atque sunt nisi, voluptate
+                minus molestias sequi ducimus explicabo reprehenderit
+                consequatur amet placeat expedita. Cupiditate, vel?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="list-group" id="exam3">
+              <a href="#page1" class="list-group-item list-group-item-action"
+                >page1</a
+              >
+              <a href="#page2" class="list-group-item list-group-item-action"
+                >page2</a
+              >
+              <a href="#page3" class="list-group-item list-group-item-action"
+                >page3</a
+              >
+              <a href="#page4" class="list-group-item list-group-item-action"
+                >page4</a
+              >
+            </div>
+          </div>
+          <div class="col-8">
+            <div
+              class="scrollspy"
+              data-spy="scroll"
+              data-target="#exam3"
+              data-offset="0"
+            >
+              <h4 id="page1">page1</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+                adipisci excepturi tempore qui magnam officia ducimus obcaecati
+                commodi incidunt aliquid! Quia totam in, iste distinctio quos
+                sit doloribus aspernatur maiores.
+              </p>
+              <h4 id="page2">page2</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+                adipisci excepturi tempore qui magnam officia ducimus obcaecati
+                commodi incidunt aliquid! Quia totam in, iste distinctio quos
+                sit doloribus aspernatur maiores.
+              </p>
+              <h4 id="page3">page3</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+                adipisci excepturi tempore qui magnam officia ducimus obcaecati
+                commodi incidunt aliquid! Quia totam in, iste distinctio quos
+                sit doloribus aspernatur maiores.
+              </p>
+              <h4 id="page4">page4</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+                adipisci excepturi tempore qui magnam officia ducimus obcaecati
+                commodi incidunt aliquid! Quia totam in, iste distinctio quos
+                sit doloribus aspernatur maiores.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>

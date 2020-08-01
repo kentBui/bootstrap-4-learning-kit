@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="KentBui" />
+    <meta name="keyword" content="bootstrap" />
+    <meta name="description" content="bootstrap learning kit" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <title>FAQ</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a href="./home.html" class="navbar-brand">
+            Bootstrap 4 learning kit
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbar-menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="nav-dropdown-menu-5"
+                  data-toggle="dropdown"
+                >
+                  Templates
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="nav-dropdown-menu-5"
+                >
+                  <a href="./photogallery.html" class="dropdown-item"
+                    >Photo gallery</a
+                  >
+                  <a href="./video_gallery.html" class="dropdown-item"
+                    >Video gallery</a
+                  >
+                  <a href="./mixed_gallery.html" class="dropdown-item"
+                    >Mixed gallery</a
+                  >
+                  <a href="./audio_gallery.html" class="dropdown-item"
+                    >Audio gallery</a
+                  >
+                  <a href="./login.html" class="dropdown-item">Login</a>
+                  <a href="./contact.html" class="dropdown-item">Contact</a>
+                  <a href="./footer.html" class="dropdown-item">Footer</a>
+                  <a href="./site_map.html" class="dropdown-item">Sitemap</a>
+                  <a href="./shortcut.html" class="dropdown-item">Shortcuts</a>
+                  <a href="./faq.html" class="dropdown-item">FAQ</a>
+                  <a href="./thank_you.html" class="dropdown-item">Thank you</a>
+                  <a href="./employee.html" class="dropdown-item">Employees</a>
+                  <a href="./pricing_table.html" class="dropdown-item"
+                    >Pricing table</a
+                  >
+                  <a href="./create_account.html" class="dropdown-item"
+                    >Create account</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container pb-5">
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb bg-white">
+            <li class="breadcrumb-item">
+              <a href="./home.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+              FAQ
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="list-group" id="faq">
+              <a
+                href="#question1"
+                class="list-group-item"
+                data-toggle="list"
+                id="q1"
+                >question 1</a
+              >
+              <a
+                href="#question2"
+                class="list-group-item"
+                data-toggle="list"
+                id="q2"
+                >question 2</a
+              >
+              <a
+                href="#question3"
+                class="list-group-item"
+                data-toggle="list"
+                id="q3"
+                >question 3</a
+              >
+              <a
+                href="#question4"
+                class="list-group-item"
+                data-toggle="list"
+                id="q4"
+                >question 4</a
+              >
+              <a
+                href="#question5"
+                class="list-group-item"
+                data-toggle="list"
+                id="q5"
+                >question 5</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-10">
+            <div class="tab-content">
+              <div
+                class="tab-pane fade show active"
+                id="question1"
+                aria-labelledby="q1"
+              >
+                <h5>question 1</h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Asperiores, distinctio!
+                </p>
+              </div>
+              <div class="tab-pane" id="question2">
+                <h5>question 2</h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Asperiores, distinctio!
+                </p>
+              </div>
+              <div class="tab-pane" id="question3">
+                <h5>question 3</h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Asperiores, distinctio!
+                </p>
+              </div>
+              <div class="tab-pane" id="question4">
+                <h5>question 4</h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Asperiores, distinctio!
+                </p>
+              </div>
+              <div class="tab-pane" id="question5">
+                <h5>question 5</h5>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Asperiores, distinctio!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="faq1">
+          <div class="card">
+            <div class="card-header">
+              <a href="#sec1" data-toggle="collapse">sec1</a>
+            </div>
+            <div class="card-body collapse" id="sec1" data-parent="#faq1">
+              <h5>sec1</h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Corporis, nemo.
+              </p>
+            </div>
+            <div class="card-header">
+              <a href="#sec2" data-toggle="collapse">sec2</a>
+            </div>
+            <div class="card-body collapse" id="sec2" data-parent="#faq1">
+              <h5>sec2</h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Corporis, nemo.
+              </p>
+            </div>
+            <div class="card-header">
+              <a href="#sec3" data-toggle="collapse">sec3</a>
+            </div>
+            <div class="card-body collapse" id="sec3" data-parent="#faq1">
+              <h5>sec3</h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Corporis, nemo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
