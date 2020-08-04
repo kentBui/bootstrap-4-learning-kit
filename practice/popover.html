@@ -298,7 +298,12 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script>
       $(function () {
-        $('[data-placement="top"]').popover();
+        $('[data-toggle="popover"]').popover({
+          delay: {
+            show: 1000,
+            hide: 500,
+          },
+        });
       });
     </script>
   </body>

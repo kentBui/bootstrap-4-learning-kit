@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="KentBui" />
+    <meta name="keyword" content="bootstrap" />
+    <meta name="description" content="bootstrap learning kit" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <title>Contacts</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a href="./home.html" class="navbar-brand">
+            Bootstrap 4 learning kit
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbar-menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="nav-dropdown-menu-5"
+                  data-toggle="dropdown"
+                >
+                  Templates
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="nav-dropdown-menu-5"
+                >
+                  <a href="./photogallery.html" class="dropdown-item"
+                    >Photo gallery</a
+                  >
+                  <a href="./video_gallery.html" class="dropdown-item"
+                    >Video gallery</a
+                  >
+                  <a href="./mixed_gallery.html" class="dropdown-item"
+                    >Mixed gallery</a
+                  >
+                  <a href="./audio_gallery.html" class="dropdown-item"
+                    >Audio gallery</a
+                  >
+                  <a href="./login.html" class="dropdown-item">Login</a>
+                  <a href="./contact.html" class="dropdown-item">Contact</a>
+                  <a href="./footer.html" class="dropdown-item">Footer</a>
+                  <a href="./site_map.html" class="dropdown-item">Sitemap</a>
+                  <a href="./shortcut.html" class="dropdown-item">Shortcuts</a>
+                  <a href="./faq.html" class="dropdown-item">FAQ</a>
+                  <a href="./thank_you.html" class="dropdown-item">Thank you</a>
+                  <a href="./employee.html" class="dropdown-item">Employees</a>
+                  <a href="./pricing_table.html" class="dropdown-item"
+                    >Pricing table</a
+                  >
+                  <a href="./create_account.html" class="dropdown-item"
+                    >Create account</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb bg-white">
+            <li class="breadcrumb-item">
+              <a href="./home.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+              contacts
+            </li>
+          </ul>
+        </nav>
+        <hr />
+      </div>
+      <div class="container">
+        <h1 class="text-center">Contact</h1>
+        <div class="row">
+          <div class="col-sm-6">
+            <h4><a href="#" class="title">Address:</a></h4>
+            <ul class="list-unstyled">
+              <li><strong>Emprire state building</strong></li>
+              <li>350 5th Avenue</li>
+              <li>New York, Ny 10118</li>
+              <li>tel: <a href="#">(212) 736-3100</a></li>
+              <li>
+                Mail:
+                <a href="mailto:duccuong.hpe@gmail.com"
+                  >duccuong.hpe@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <h4><a href="#" class="title">Opening hours:</a></h4>
+            <ul class="list-unstyled">
+              <li class="d-flex justify-content-between">
+                <span>Monday-thursday:</span>
+                <span>10am-6pm</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <span>Friday-saturday:</span>
+                <span>10am-10pm</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <span>Sunday:</span>
+                <span>10am-8pm</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h4><a href="#" class="title">Send us a message:</a></h4>
+            <form>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control"
+                      placeholder="Name"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="phone">Telephone</label>
+                    <input
+                      type="number"
+                      id="phone"
+                      class="form-control"
+                      placeholder="0123456789"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="department">Department:</label>
+                    <select class="form-control">
+                      <option selected>-select here-</option>
+                      <option value="1">i tem 1</option>
+                      <option value="2">i tem 2</option>
+                      <option value="3">i tem 3</option>
+                      <option value="4">i tem 4 </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      class="form-control"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <button type="submit" class="btn btn-primary mr-2">
+                    Submit
+                  </button>
+                  <button type="reset" class="btn btn-secondary ml-2">
+                    Reset
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <h4><a href="#" class="title">Where to find us:</a></h4>
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14901.454424631565!2d105.79380725!3d20.978057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acd937a63433%3A0xf28bd485c46d0e27!2zMjDCsDU4JzEyLjUiTiAxMDXCsDQ3JzU2LjciRQ!5e0!3m2!1svi!2s!4v1596438845165!5m2!1svi!2s"
+                width="400"
+                height="300"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen="true"
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
